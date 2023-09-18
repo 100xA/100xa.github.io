@@ -4,7 +4,7 @@
  <title>Jan Biernacki Personal Portfolio</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-03-28T18:34:17+02:00</updated>
+ <updated>2023-09-18T17:59:48+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -66,29 +66,26 @@ Thanks for reading!&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Project &quot;Integrationseminar&quot;</title>
+   <title>Project &quot;Integrationsseminar&quot;</title>
    <link href="http://localhost:4000/2023/01/05/project-integrationseminar"/>
    <updated>2023-01-05T00:00:00+01:00</updated>
    <id>http://localhost:4000/2023/01/05/project-integrationseminar</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;The application is still WIP!!!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;general-info&quot;&gt;General Info&lt;/h1&gt;
+   <content type="html">&lt;h1 id=&quot;general-info&quot;&gt;General Info&lt;/h1&gt;
 
 &lt;p&gt;The Project “Integrationsseminar” is a flutter project for the seminar “Digitale Assistenzsysteme für den technischen Service”. Goal of the application is to build an environment for the employees of a paper company (Engineers, Managers, Admins) to manage production machines and their components.&lt;/p&gt;
+
+&lt;p&gt;The documentation is written with the arc42-Template and is available on the repo.&lt;/p&gt;
 
 &lt;h1 id=&quot;technical-summary&quot;&gt;Technical Summary&lt;/h1&gt;
 
 &lt;h3 id=&quot;reference-projects&quot;&gt;Reference projects&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;https://github.com/akshansh2000/learn_ar_flutter&lt;/li&gt;
-  &lt;li&gt;https://github.com/MahmoudHesham099/Java-Spring-Boot-Flutter-Todo&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;packages&quot;&gt;Packages&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;https://pub.dev/packages/ar_flutter_plugin&lt;/li&gt;
   &lt;li&gt;https://pub.dev/packages/firebase_core&lt;/li&gt;
-  &lt;li&gt;https://pub.dev/packages/chewie&lt;/li&gt;
   &lt;li&gt;https://pub.dev/packages/csv&lt;/li&gt;
   &lt;li&gt;https://pub.dev/packages/pdf&lt;/li&gt;
   &lt;li&gt;https://pub.dev/packages/firebase_database&lt;/li&gt;
@@ -106,7 +103,6 @@ Thanks for reading!&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/100xA/integrationFlutterApp&quot;&gt;Link to the repository&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;The application is still WIP!!!&lt;/strong&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -140,7 +136,7 @@ Thanks for reading!&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/100xA/zample_workbook&quot;&gt;Link to the repository&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://nexliber.com/workbook/zample-part-1&quot;&gt;Link to the workbook on Nextliber.com&lt;/a&gt; - only if you are signed in&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nexliber.com/workbook/zample-part-1&quot;&gt;Link to the workbook on Nextliber.com&lt;/a&gt; - only accessible if you are signed in&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The project is completed.&lt;/p&gt;
