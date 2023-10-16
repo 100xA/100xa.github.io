@@ -7,7 +7,7 @@ title: Resume
 
 <br>
 
-Hi, my name is Jan Biernacki. I am a 21 year old Software Developer from Germany. I have 4 years of experience in **Android/Cross-Plattform App-Development**, working mostly for/with startups: From planning, prototyping, interface design and backend design to full-stack development.
+Hi, my name is Jan Biernacki. I am a 22 year old Software Developer from Germany. I have 4 years of experience in **Android/Cross-Plattform App-Development**, working mostly for/with startups: From planning, prototyping, interface design and backend design to full-stack development.
 
 <br>
 
@@ -26,7 +26,7 @@ Hi, my name is Jan Biernacki. I am a 21 year old Software Developer from Germany
 * **2015** first Android Development of Project “Zample”
 * **2019** change from Android Development to Cross-Plattform-Development (Flutter)
 * **2019-2022** Software Developer and temporarily Project Manager at Vamos!
-* **2019-2023** studying business informatics at DHBW Stuttgart
+* **2020-2023** studying business informatics at DHBW Stuttgart
 * **2023-now** studying Software Development at Internationale Hochschule
 
 ## Skillset
