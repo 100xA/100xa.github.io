@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<section class="blog">
+    <h2>{{ page.title }}</h2>
+    {{ content }}
+    <span class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+</section>

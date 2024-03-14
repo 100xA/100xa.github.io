@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;600&family=Pixelify+Sans&family=VT323&display=swap');
+
+:root {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 200;
+  --bg: #191724;
+  --border: #c4a7e7;
+  --text:#e0def4;
+  --prompt-default: #FF9951;
+  --prompt-1: #eb6f92;
+  --prompt-2: #e0def4;
+}
+
+
 
 *,:after,:before {
 	box-sizing:border-box;
-	background-color: #28262C;                                                                                                                                                                               ;
+	background-color: var(--bg);                                                                                                                                                                               ;
 	color:inherit;
 	margin:0;
 	padding:0;
@@ -13,15 +27,15 @@ body {
     text-rendering: optimizeLegibility;
 	line-height:1.5;
 	font-size: 1rem;
-	color: rgba(255,255,255, 0.8);
+	color: var(--text);
 }
 
 nav ul {
-    border-right: 1px solid #F9F5FF;
+    border-right: 1px solid var(--border);
 }
 
 a {
-    color: #D4C2FC;
+    color: var(--prompt-1);
     text-decoration-skip-ink: auto;
     text-decoration: underline;
 }
@@ -154,9 +168,6 @@ strong, b {
 	font-variant-numeric: tabular-nums;
 }
 
-.post ul, .project ul, .post ol  {
-	//list-style-position: inside;
-}
 
 main {
 	display:flex;
@@ -176,7 +187,7 @@ header li {
 	padding-bottom: 1rem;
 }
 header ul {
-	border-bottom: 1px solid #998FC7;
+	border-bottom: 1px solid var(--prompt-2);
 	padding-bottom: 2rem;	
 }
 nav ul {

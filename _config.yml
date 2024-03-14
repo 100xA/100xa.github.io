@@ -4,7 +4,6 @@ title: Jan Biernacki Personal Portfolio
 description: I am a 21 year old Software Developer from Germany, mostly working with Flutter. Feel free to check out my projects!
     <a href="https://github.com/100xA" target="_blank" rel="noopener">@github</a>.
 permalink: pretty
-baseurl: 
 
 highlighter: none
 
@@ -17,7 +16,7 @@ compress_html:
 
 sass:
   sass_dir:          _sass
-  style:            :compressed
+ 
 
 plugins:
   - jekyll-paginate
@@ -30,7 +29,9 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /:year/:month/:day/:slug
+  blogs:
+    output: true
+    
   
 defaults:
   -
@@ -40,13 +41,19 @@ defaults:
       layout: "default"
   -
     scope:
-      path: ""
+      path: "/pages"
       type: "pages"
     values:
       layout: "page"
   -
     scope:
-      path: ""
+      path: "/"
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "/blog"
+      type: "blogs"
+    values:
+      layout: "blog"    

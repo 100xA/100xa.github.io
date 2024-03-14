@@ -11,12 +11,33 @@
 "items": [
     
         {
-            "id": "http://localhost:4000/2023/03/22/project-pomodoro-tracker",
+            "id": "http://localhost:4000/2024/03/14/blog-devin-ai/",
+            "title": "Devin and the AI craze",
+            "summary": null,
+            "content_text": "",
+            "content_html": "",
+            "url": "http://localhost:4000/2024/03/14/blog-devin-ai/",
+            
+            
+            
+            "tags": ["ai","status-finished"],
+            
+            "date_published": "2024-03-14T00:00:00+01:00",
+            "date_modified": "2024-03-14T00:00:00+01:00",
+            
+                "author": 
+                ""
+                
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/2023/03/22/project-pomodoro-tracker/",
             "title": "Project \"Pomodoro Tracker\"",
             "summary": "Notes on the Project \"PomodoroTracker\" - A very simplistic Pomodoro Tracker in your Z-Shell",
             "content_text": "General InfoI have been recently struggling with the amount of options of Pomodoro-Trackers that are out there. Incable of finding a simple Tracker that doesn’t include any special features I have set out to build an alternative myself.Technical SummaryThe Project essentially has two modes of operation:  pomoShort: a 25(work)/5(rest) min split  pomoLong: a 50(work)/10(rest) min splitBoth splits can be repeated as much as they can.InstallationZshThis project requires the Z-Shell to work. Get more info here.TimerThis project requires the timer project to work properly.Setup  Create / navigate towards your .zshrc file - nano ~\\.zshrc  Paste the script underneath your PATH variablesThat’s it! Now you have a quick Pomodoro-CLI for your productivity setupLinks and further information  Link to the repositoryI will be updating the project regarding my own needs while keeping it as lightweight as possible.Thanks for reading!",
             "content_html": "<p><img src=\"/assets/gifs/Pomo.gif\" alt=\"PomoCLI\" /></p><h1 id=\"general-info\">General Info</h1><p>I have been recently struggling with the amount of options of Pomodoro-Trackers that are out there. Incable of finding a simple Tracker that doesn’t include any special features I have set out to build an alternative myself.</p><h1 id=\"technical-summary\">Technical Summary</h1><p>The Project essentially has two modes of operation:</p><ul>  <li><strong>pomoShort:</strong> a 25(work)/5(rest) min split</li>  <li><strong>pomoLong:</strong> a 50(work)/10(rest) min split</li></ul><p>Both splits can be repeated as much as they can.</p><h2 id=\"installation\">Installation</h2><h3 id=\"zsh\">Zsh</h3><p>This project requires the Z-Shell to work. Get more info <a href=\"https://ohmyz.sh\">here</a>.</p><h3 id=\"timer\">Timer</h3><p>This project requires the <a href=\"https://github.com/caarlos0/timer\">timer</a> project to work properly.</p><h3 id=\"setup\">Setup</h3><ol>  <li>Create / navigate towards your .zshrc file - <code>nano ~\\.zshrc</code></li>  <li>Paste the script underneath your PATH variables</li></ol><p>That’s it! Now you have a quick Pomodoro-CLI for your productivity setup</p><h1 id=\"links-and-further-information\">Links and further information</h1><ul>  <li><a href=\"https://github.com/100xA/PomodoroTrackerCLI\">Link to the repository</a></li></ul><p>I will be updating the project regarding my own needs while keeping it as lightweight as possible.Thanks for reading!</p>",
-            "url": "http://localhost:4000/2023/03/22/project-pomodoro-tracker",
+            "url": "http://localhost:4000/2023/03/22/project-pomodoro-tracker/",
             
             
             
@@ -32,12 +53,12 @@
         },
     
         {
-            "id": "http://localhost:4000/2023/01/05/project-integrationseminar",
+            "id": "http://localhost:4000/2023/01/05/project-integrationseminar/",
             "title": "Project \"Integrationsseminar\"",
             "summary": "Notes on the Project \"Integrationsseminar\" - A flutter project for the Seminar \"Digitale Assistenzsysteme für den technischen Service\"",
             "content_text": "General InfoThe Project “Integrationsseminar” is a flutter project for the seminar “Digitale Assistenzsysteme für den technischen Service”. Goal of the application is to build an environment for the employees of a paper company (Engineers, Managers, Admins) to manage production machines and their components.The documentation is written with the arc42-Template and is available on the repo.Technical SummaryReference projects  https://github.com/akshansh2000/learn_ar_flutterPackages  https://pub.dev/packages/firebase_core  https://pub.dev/packages/csv  https://pub.dev/packages/pdf  https://pub.dev/packages/firebase_databaseArchitecture  BLoC/Cubit: https://pub.dev/packages/flutter_bloc  Get_it : https://pub.dev/packages/get_itLinks and further information  Link to the repository",
             "content_html": "<h1 id=\"general-info\">General Info</h1><p>The Project “Integrationsseminar” is a flutter project for the seminar “Digitale Assistenzsysteme für den technischen Service”. Goal of the application is to build an environment for the employees of a paper company (Engineers, Managers, Admins) to manage production machines and their components.</p><p>The documentation is written with the arc42-Template and is available on the repo.</p><h1 id=\"technical-summary\">Technical Summary</h1><h3 id=\"reference-projects\">Reference projects</h3><ul>  <li>https://github.com/akshansh2000/learn_ar_flutter</li></ul><h3 id=\"packages\">Packages</h3><ul>  <li>https://pub.dev/packages/firebase_core</li>  <li>https://pub.dev/packages/csv</li>  <li>https://pub.dev/packages/pdf</li>  <li>https://pub.dev/packages/firebase_database</li></ul><h2 id=\"architecture\">Architecture</h2><ul>  <li>BLoC/Cubit: https://pub.dev/packages/flutter_bloc</li>  <li>Get_it : https://pub.dev/packages/get_it</li></ul><h1 id=\"links-and-further-information\">Links and further information</h1><ul>  <li><a href=\"https://github.com/100xA/integrationFlutterApp\">Link to the repository</a></li></ul>",
-            "url": "http://localhost:4000/2023/01/05/project-integrationseminar",
+            "url": "http://localhost:4000/2023/01/05/project-integrationseminar/",
             
             
             
@@ -53,12 +74,12 @@
         },
     
         {
-            "id": "http://localhost:4000/2021/03/01/project-zample-workbook",
+            "id": "http://localhost:4000/2021/03/01/project-zample-workbook/",
             "title": "Project \"Zample Workbook Part 1\"",
             "summary": "Notes on the Project \"Zample\" - a Cross-Plattform Application for centrally distributing ideas and their respective creators.",
             "content_text": "General InfoThis is an updated version of Project Zample. Since Zample’s code was outdated, I have updated it to the non-null standard provided by Flutter.The project workbook was written for NexLiber.com.Technical SummaryThis is part one of a probably three-part series, meaning that this project only encompasses:  General Setup (Seperation of BL, UI and Repo, project structure)  Firebase Setup  Firebase Auth (Google Auth)The projects follows the same technical guidelines/processes as Project Zample.Links and further informationI have added the full workbook documentation to the ReadMe-File on Github. Feel free to check it out!  Link to the repository  Link to the workbook on Nextliber.com - only accessible if you are signed inThe project is completed.",
             "content_html": "<h1 id=\"general-info\">General Info</h1><p>This is an updated version of <a href=\"/2021/01/01/project-zample\">Project Zample</a>. Since Zample’s code was outdated, I have updated it to the non-null standard provided by Flutter.</p><p><img src=\"/assets/images/landing-page.png\" alt=\"Zample Design\" class=\"align-center\" /></p><p>The project workbook was written for <a href=\"https://nexliber.com\">NexLiber.com</a>.</p><h1 id=\"technical-summary\">Technical Summary</h1><p>This is part one of a probably three-part series, meaning that this project only encompasses:</p><ul>  <li>General Setup (Seperation of BL, UI and Repo, project structure)</li>  <li>Firebase Setup</li>  <li>Firebase Auth (Google Auth)</li></ul><p>The projects follows the same technical guidelines/processes as <a href=\"/2021/01/01/project-zample\">Project Zample</a>.</p><h1 id=\"links-and-further-information\">Links and further information</h1><p>I have added the full workbook documentation to the ReadMe-File on Github. Feel free to check it out!</p><ul>  <li><a href=\"https://github.com/100xA/zample_workbook\">Link to the repository</a></li>  <li><a href=\"https://nexliber.com/workbook/zample-part-1\">Link to the workbook on Nextliber.com</a> - only accessible if you are signed in</li></ul><p>The project is completed.</p>",
-            "url": "http://localhost:4000/2021/03/01/project-zample-workbook",
+            "url": "http://localhost:4000/2021/03/01/project-zample-workbook/",
             
             
             
@@ -74,12 +95,12 @@
         },
     
         {
-            "id": "http://localhost:4000/2021/01/01/project-zample",
+            "id": "http://localhost:4000/2021/01/01/project-zample/",
             "title": "Project \"Zample\"",
             "summary": "Notes on the Project \"Zample\" - a Cross-Plattform Application for centrally distributing ideas and their respective creators.",
             "content_text": "General InfoThe Application “Zample” is a Cross-Plattform Application for centrally distributing ideas and their respective creators.Since 2019, the program has been developed by myself and two other team-members, with the goal to ease the way how people share very early ideas and provide a fresh marketplace for them.Technical Summary“Zample” is written with the Flutter/Dart Cross-Plattform Framework created by Google.The Projects Database is maintained by Google Firebase.To have a clear and functioning seperation between UI, BL and Repository, the popular state management library BLoC/Cubit (Business Logic other Component) was chosen.Cubit, being an extension of the BLoC library, is often used to better organise the BL’s BlocBase.To ensure easy dependency injection, the package get_it was used. Services across the application can now be implemented/referenced/called from everywhere in the project.Project Structure├── lib│   ├── api│   ├── components│   │   ├── home│   │   │   ├── bloc│   │   │   │   └── cubit│   │   │   └── ui│   │   ├── landing│   │   │   ├── bloc│   │   │   │   └── cubit│   │   │   └── ui│   │   │       └── widgets│   │   ├── profile│   │   │   ├── bloc│   │   │   │   └── cubit│   │   │   ├── repo│   │   │   └── ui│   │   │       └── widgets│   │   └── settings│   ├── core│   │   ├── bloc│   │   │   ├── app│   │   │   ├── auth│   │   │   └── theme│   │   ├── error_handler│   │   ├── logger│   │   ├── repo│   │   ├── services│   │   └── widgets│   ├── main.dart│   ├── misc│   │   ├── routes│   │   └── theme└── testThe Project follows the principles of dividing UI/BL/Repository, while incorporating some aspects of the Clean Architecture-approach.  Api - Endpoints to every API that has been used  components - Main components of the application, divided into each functional part of the application, where every part has a own UI/BL/Repository for its service  core - overarching features of the application (authentication, logging etc.)  misc - miscellanous features (routing, themes/color schemes) of the application  test - folder for test for the application (not included in the project)Links and further information  Link to the repository  Link to the website on NotionThe project is no longer active.",
             "content_html": "<h1 id=\"general-info\">General Info</h1><p>The Application “Zample” is a Cross-Plattform Application for centrally distributing ideas and their respective creators.</p><p>Since 2019, the program has been developed by myself and two other team-members, with the goal to ease the way how people share very early ideas and provide a fresh marketplace for them.</p><p><img src=\"/assets/images/zample-design.png\" alt=\"Zample Design\" class=\"align-center\" /></p><h1 id=\"technical-summary\">Technical Summary</h1><p>“Zample” is written with the <strong>Flutter/Dart Cross-Plattform</strong> Framework created by Google.The Projects Database is maintained by <strong>Google Firebase</strong>.</p><p>To have a clear and functioning seperation between UI, BL and Repository, the popular state management library <strong>BLoC/Cubit (Business Logic other Component)</strong> was chosen.Cubit, being an extension of the BLoC library, is often used to better organise the BL’s <code>BlocBase</code>.</p><p><img src=\"/assets/images/bloc-cubit-arch.png\" alt=\"BLoC/Cubit\" /></p><p>To ensure easy dependency injection, the package <a href=\"https://pub.dev/packages/get_it\"><code>get_it</code></a> was used. Services across the application can now be implemented/referenced/called from everywhere in the project.</p><h2 id=\"project-structure\">Project Structure</h2><pre><code>├── lib│   ├── api│   ├── components│   │   ├── home│   │   │   ├── bloc│   │   │   │   └── cubit│   │   │   └── ui│   │   ├── landing│   │   │   ├── bloc│   │   │   │   └── cubit│   │   │   └── ui│   │   │       └── widgets│   │   ├── profile│   │   │   ├── bloc│   │   │   │   └── cubit│   │   │   ├── repo│   │   │   └── ui│   │   │       └── widgets│   │   └── settings│   ├── core│   │   ├── bloc│   │   │   ├── app│   │   │   ├── auth│   │   │   └── theme│   │   ├── error_handler│   │   ├── logger│   │   ├── repo│   │   ├── services│   │   └── widgets│   ├── main.dart│   ├── misc│   │   ├── routes│   │   └── theme└── test</code></pre><p>The Project follows the principles of dividing UI/BL/Repository, while incorporating some aspects of the <code>Clean Architecture</code>-approach.</p><ul>  <li><strong>Api</strong> - Endpoints to every API that has been used</li>  <li><strong>components</strong> - Main components of the application, divided into each functional part of the application, where every part has a own UI/BL/Repository for its service</li>  <li><strong>core</strong> - overarching features of the application (authentication, logging etc.)</li>  <li><strong>misc</strong> - miscellanous features (routing, themes/color schemes) of the application</li>  <li><strong>test</strong> - folder for test for the application (not included in the project)</li></ul><h1 id=\"links-and-further-information\">Links and further information</h1><ul>  <li><a href=\"https://github.com/100xA/Zample\">Link to the repository</a></li>  <li><a href=\"https://pstarterapp.de\">Link to the website on Notion</a></li></ul><p>The project is no longer active.</p>",
-            "url": "http://localhost:4000/2021/01/01/project-zample",
+            "url": "http://localhost:4000/2021/01/01/project-zample/",
             
             
             

@@ -4,7 +4,7 @@
  <title>Jan Biernacki Personal Portfolio</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-12-15T14:26:10+01:00</updated>
+ <updated>2024-03-14T21:12:07+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,8 +13,17 @@
 
  
  <entry>
+   <title>Devin and the AI craze</title>
+   <link href="http://localhost:4000/2024/03/14/blog-devin-ai/"/>
+   <updated>2024-03-14T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2024/03/14/blog-devin-ai</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
    <title>Project &quot;Pomodoro Tracker&quot;</title>
-   <link href="http://localhost:4000/2023/03/22/project-pomodoro-tracker"/>
+   <link href="http://localhost:4000/2023/03/22/project-pomodoro-tracker/"/>
    <updated>2023-03-22T00:00:00+01:00</updated>
    <id>http://localhost:4000/2023/03/22/project-pomodoro-tracker</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/gifs/Pomo.gif&quot; alt=&quot;PomoCLI&quot; /&gt;&lt;/p&gt;
@@ -67,7 +76,7 @@ Thanks for reading!&lt;/p&gt;
  
  <entry>
    <title>Project &quot;Integrationsseminar&quot;</title>
-   <link href="http://localhost:4000/2023/01/05/project-integrationseminar"/>
+   <link href="http://localhost:4000/2023/01/05/project-integrationseminar/"/>
    <updated>2023-01-05T00:00:00+01:00</updated>
    <id>http://localhost:4000/2023/01/05/project-integrationseminar</id>
    <content type="html">&lt;h1 id=&quot;general-info&quot;&gt;General Info&lt;/h1&gt;
@@ -108,7 +117,7 @@ Thanks for reading!&lt;/p&gt;
  
  <entry>
    <title>Project &quot;Zample Workbook Part 1&quot;</title>
-   <link href="http://localhost:4000/2021/03/01/project-zample-workbook"/>
+   <link href="http://localhost:4000/2021/03/01/project-zample-workbook/"/>
    <updated>2021-03-01T00:00:00+01:00</updated>
    <id>http://localhost:4000/2021/03/01/project-zample-workbook</id>
    <content type="html">&lt;h1 id=&quot;general-info&quot;&gt;General Info&lt;/h1&gt;
@@ -145,7 +154,7 @@ Thanks for reading!&lt;/p&gt;
  
  <entry>
    <title>Project &quot;Zample&quot;</title>
-   <link href="http://localhost:4000/2021/01/01/project-zample"/>
+   <link href="http://localhost:4000/2021/01/01/project-zample/"/>
    <updated>2021-01-01T00:00:00+01:00</updated>
    <id>http://localhost:4000/2021/01/01/project-zample</id>
    <content type="html">&lt;h1 id=&quot;general-info&quot;&gt;General Info&lt;/h1&gt;
