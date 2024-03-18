@@ -125,7 +125,7 @@ The goal here is not to have the most correct assessment of technical prowess, b
 <br> <br>
 ![Alt text](/assets/images/blog/near-human-headline.png)
 <br> <br>
-Seems scary right? Did we make so much progress in one year? Was Claude not able to resolve algebra, but now we have truly build an near perfect AI?
+Seems scary, right? Did we make so much progress in one year? Was Claude not able to resolve algebra, but now we have truly build a near perfect AI?
 <br> <br>
 ![Alt text](/assets/images/blog/benchmark-claude-3.png)
 <br> <br>
