@@ -4,7 +4,7 @@
  <title>Jan Biernacki Personal Portfolio</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-03-14T22:15:16+01:00</updated>
+ <updated>2024-03-18T21:17:01+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Devin and the AI craze</title>
+   <title>Devin and the AI economy</title>
    <link href="http://localhost:4000/2024/03/14/blog-devin-ai/"/>
    <updated>2024-03-14T00:00:00+01:00</updated>
    <id>http://localhost:4000/2024/03/14/blog-devin-ai</id>
@@ -25,6 +25,8 @@ As technical staff we often develop a different viewpoint on things, especially 
 This short essay is meant to explore the possibilities and shortcomings of “AIs” and technologies surrounding it from the perspective of a engineer, but for non-technical professionals. &lt;br /&gt;
 &lt;br /&gt;
 Often times those are the people who enact real managerial change, which is why it is so important to accurately inform them on the current technical trends, without relying too much on the hype.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;so-what-are-those-ais-anyways&quot;&gt;So what are those AIs anyways?&lt;/h2&gt;
 
@@ -40,7 +42,134 @@ Often times those are the people who enact real managerial change, which is why 
 
 &lt;p&gt;A few days ago, Devin got announced. With Cognition Labs slogan of building the first “AI Software Engineer” plenty of VCs got excited, and many developers got scared. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Devin can already pass Upwork Requests (which are usually reserved for Freelancers), it has an editor window where it can edit code, it has a browser window where it can interact with websites like GitHub, and it can read and make use of some documentation. The main thing seems to be the dedicated planning window, for how it approaches tasks. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Devin can already pass Upwork Requests (which are usually reserved for Freelancers), it has an editor window where it can edit code, it has a browser window where it can interact with websites like GitHub, and it can read and make use of some documentation. The main thing seems to be the dedicated planning window and how it approaches tasks given in form
+of prompts. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is some legitimate question about just how cherry-picked these examples are, but there is not anything about what it does that seems infeasible. But it is not a real AI software engineer, its more another tool for us. Well why is that? &lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is because employing software engineers (most of the times) means creating business value. The job of a software engineering team is generally to take those high-level business requirements from the non-programming business folks, turn those things into a product or service that can then be userd by customers.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even if Devin would write perfect code, he still is not a software engineer, and is not inteded to work with non-programmers to create value for customers.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-devin-actually-do&quot;&gt;What can Devin actually do?&lt;/h2&gt;
+
+&lt;p&gt;Even if we now know, that conceptually, LLMs in our understanding will never fully replace software engineers, we still need to watch what LLMs can do, and how far they have already come.
+Looking at those graphs, Devin seems to be a major improvement to other LLMs.
+&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/devin-test.jpeg&quot; alt=&quot;Real World Engineering Performance (SWE-bench)&quot; /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;But what do those figures actually mean?&lt;/p&gt;
+
+&lt;p&gt;The SWE-Bench provides test queries from real world code issues (posted and resolved on Github) and tries to resolve them with the help of current models. The human score is in contrast 100 percent, because all of the problems are already solved. The correctness of the generated patches is assessed based on how well they pass unit test.
+&lt;br /&gt;&lt;br /&gt;
+The test results are divided into two categories: Assisted and Unasisted. So what are those questions like?
+&lt;br /&gt; &lt;br /&gt;
+Lets look at some examples in the given json:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;
+Latex parsing of fractions yields wrong expression due to missing brackets
+
+Problematic latex expression: &quot;\\frac{\\frac{a^3+b}{c}}{\\frac{1}{c^2}}&quot;
+
+is parsed to: ((a**3 + b)/c)/1/(c**2).
+
+Expected is: ((a**3 + b)/c)/(1/(c**2)).
+
+The missing brackets in the denominator result in a wrong expression.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The issue can be found &lt;a href=&quot;https://github.com/sympy/sympy/issues/8648&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;The following:
+
+&amp;gt;&amp;gt;&amp;gt; n = Symbol(&apos;n&apos;, integer=True, even=True)
+&amp;gt;&amp;gt;&amp;gt; (n**2/2).is_even
+should return True, but it returns None (of course, this is also an enhancement).
+
+That makes me think that perhaps symbolic integers should keep a more complex &quot;assumptions&quot; method, which generalizes &quot;is_even&quot; and &quot;is_odd&quot; to instead contain a dictionary of primes that are known to divide that integer, mapping to minimum and maximum known multiplicity.
+
+I would like to think about it and post a proposition/plan, but I am not sure what is the correct github way of doing this.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The issue can be found &lt;a href=&quot;https://github.com/sympy/sympy/issues/21537&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+Even without having prior knowledge in the tech stack used, we can clearly see that the shown issues boil down into relatively simple failed/incomplete instructions to the code. Issues like that are usually not breaking, and can be resolved within a few minutes/hours, depending on the skill.
+So how many of those issues can the state of the art models train?&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+&lt;img src=&quot;/assets/images/blog/unassisted-models-swe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the current output, Claude 2 seems to be peaking at 4.8 %. This does not seem to be that threathening as one might assume, and I do not think that we should throw out software engineers for those kind of results.
+But there is one more thing. This is the “assisted” category. The tested system get provided the list of files that were modified for that particular Issue. While human engineers often need to look up which files are contributing to the issue and then resolve said problem, this is here not the case at all. So what are the “unassisted” numbers?&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+&lt;img src=&quot;/assets/images/blog/assisted-models-swe.png&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+This looks pretty bleak for now. We see that most models currently cannot surpassed the one percent mark. So with Devin (which is trained on the same dataset), why did the numbers skyrocket?
+I cannot know for sure, but remember that they are plenty of factors and tactics to artificially mark up the percentages provided:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;We currently do not know on which data subset the data was trained on.&lt;/li&gt;
+  &lt;li&gt;The best yield achieved is probably the one shown.&lt;/li&gt;
+  &lt;li&gt;Other models presented do not have the mentioned environment (cli, reusability of code fragments etc.) available, which is probably why the results are so different.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The goal here is not to have the most correct assessment of technical prowess, but to cater to VCs and sell the product - which is totally understandable.
+&lt;br /&gt; &lt;br /&gt;
+&lt;strong&gt;But maybe you are still not convinced, because you have seen headlines similar to &lt;a href=&quot;https://arstechnica.com/information-technology/2024/03/the-ai-wars-heat-up-with-claude-3-claimed-to-have-near-human-abilities/&quot;&gt;that&lt;/a&gt; one?&lt;/strong&gt;
+&lt;br /&gt; &lt;br /&gt;
+&lt;img src=&quot;/assets/images/blog/near-human-headline.png&quot; alt=&quot;Alt text&quot; /&gt;
+&lt;br /&gt; &lt;br /&gt;
+Seems scary right? Did we make so much progress in one year. Was Claude not able to resolve algebra, but now we have truly build an AI?
+&lt;br /&gt; &lt;br /&gt;
+&lt;img src=&quot;/assets/images/blog/benchmark-claude-3.png&quot; alt=&quot;Alt text&quot; /&gt;
+&lt;br /&gt; &lt;br /&gt;
+Oh wow, the numbers seem to be exponentially higher than before? Why is that?
+First of all, the test environment uses a different benchmark, including &lt;a href=&quot;https://paperswithcode.com/dataset/humaneval&quot;&gt;HumanEval&lt;/a&gt;. Using their dataset, we can extract the questions used for the test.
+&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;You are given a non-empty list of positive integers. Return the greatest integer that is greater than
+    zero, and has a frequency greater than or equal to the value of the integer itself.
+    The frequency of an integer is the number of times it appears in the list.
+    If no such a value exist, return -1.
+    Examples:
+        search([4, 1, 2, 2, 3, 1]) == 2
+        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3
+        search([5, 5, 4, 4, 4]) == -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+If you want to see the output for yourself, you can use the terminal and search the question for yourself &lt;code&gt;curl -L -q -s https://github.com/openai/human-eval/raw/master/data/HumanEval.jsonl.gz | gzip -cd |\
+ jq -sr &apos;([ .[].test | length ] | max) as $m | map(select (.test | length == $m))[0] | &quot;\n\(.task_id)\n \(.prompt)&quot;&apos;&lt;/code&gt;.
+&lt;br /&gt; &lt;br /&gt;
+For everybody who has some basic experience of coding at all, this question seems rather lacking in itself. It could be used in technical interview to scrape the basic understanding of a graduate CS student without any online help. This question does not hold any real value in production environments, and is specifically designed to be understood by LLMs, because of its innate simplicity and trainability.
+&lt;br /&gt; &lt;br /&gt;
+If you do not believe me, you can try it out yourself. The other examples in itself meet the same threshold of complexity. It is not surprising, that the models tested on that benchmark thus achieve such high scores.
+&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;so-is-it-all-just-hype&quot;&gt;So is it all just hype?&lt;/h2&gt;
+
+&lt;p&gt;No. But it should be regarded as a bubble. And like every bubble, it will burst at some point. LLMs are extremely valuable for future software engineers and technical staff as a tool to automate things and be more productive. It is not going to replace us in the near future when it comes to solving coding problems, and I do not think it will ever replace the term “software engineer” coneceptually.
+&lt;br /&gt; &lt;br /&gt;
+What is important though is to get aquainted in those tools and look for possibilities on how to effeciently use “AI” to leverage your value as a professional. For non-technical people it is more important than ever to listen to technical professional on what to expect in the current changes, and how to adapt, without buying to much into the hype that is circulating Social Media. If you as a new programmer think that writing code is the main part of your job/should be the focus on what you do - be ready for big changes, extend your skills into other areas of software engineering.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;br /&gt;
+&lt;strong&gt;Nonetheless - be critical, adapt to a new upcoming environment and do not forget to be relaxed - Devin is not gonna take your job tomorrow. :D&lt;/strong&gt;&lt;/p&gt;
 </content>
  </entry>
  
