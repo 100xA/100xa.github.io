@@ -6,9 +6,10 @@ comments: true
 tags: [ai, status-finished]
 ---
 
-So whats with this AI thing? Is it gonna replace my job as a software developer soon, or am I doomed to do this myself for a long time?
-
-With the emergence of Devin from Cognition Labs, those questions seem to be more and more pressing.
+**So whats with this AI thing? Is it gonna replace my job as a software developer soon, or am I doomed to do this myself for a long time?**
+<br>
+<br>
+With the emergence of [Devin from Cognition Labs](https://www.cognition-labs.com/introducing-devin), those questions seem to be more and more pressing.
 As technical staff we often develop a different viewpoint on things, especially if it directly matters to us. <br>
 <br>
 This short essay is meant to explore the possibilities and shortcomings of "AIs" and technologies surrounding it from the perspective of a engineer, but for non-technical professionals. <br>
@@ -23,7 +24,7 @@ When we hear terms like AI and Machine Learning, we often get confused. GPT-3, D
 
 Generative models have been used for years prior in statistics to analyze numerical data. The rise of deep learning, however, made it possible to extend those capabilities to images, speech and other complex data types. <br> <br>
 
-So no, in the current iteration, Generative AI cannot develop new capabilities beyond its reach or rather learned capabilities. While it can synthesize knowledge, and f.e write a paragraph of song lyrics in the style of Yukio Mishima, it only can mimic those styles and influences and not create its own.
+So no, in the current iteration, Generative AI cannot develop new capabilities beyond its reach or rather learned capabilities. While it can synthesize knowledge, and f.e write a paragraph of song lyrics in the style of Goethe, it only can mimic those styles and influences and not create its own.
 
 <br> <br>
 
@@ -31,7 +32,7 @@ So no, in the current iteration, Generative AI cannot develop new capabilities b
 
 A few days ago, Devin got announced. With Cognition Labs slogan of building the first "AI Software Engineer" plenty of VCs got excited, and many developers got scared. <br><br>
 
-Devin can already pass Upwork Requests (which are usually reserved for Freelancers), it has an editor window where it can edit code, it has a browser window where it can interact with websites like GitHub, and it can read and make use of some documentation. The main thing seems to be the dedicated planning window and how it approaches tasks given in form
+Devin can already pass Upwork Requests (which are usually reserved for Freelancers), it has an editor window where it can edit code, it has a browser window where it can interact with websites like GitHub, and it can read and make use of some documentation. The main thing seems to be the dedicated planning window and how it approaches tasks given in form.
 of prompts. <br><br>
 
 There is some legitimate question about just how cherry-picked these examples are, but there is not anything about what it does that seems infeasible. But it is not a real AI software engineer, its more another tool for us. Well why is that? <br> <br>
@@ -54,14 +55,12 @@ Looking at those graphs, Devin seems to be a major improvement to other LLMs.
 <br> <br>
 
 But what do those figures actually mean?
-
-The SWE-Bench provides test queries from real world code issues (posted and resolved on Github) and tries to resolve them with the help of current models. The human score is in contrast 100 percent, because all of the problems are already solved. The correctness of the generated patches is assessed based on how well they pass unit test.
+<br> <br>
+The [SWE-Bench](https://www.swebench.com/) provides test queries from real world code issues (posted and resolved on Github) and tries to resolve them with the help of current models. The human score is in contrast 100 percent, because all of the problems are already solved. The "correctness" of the generated patches is assessed based on how well they pass the corresponding unit test.
 <br><br>
-The test results are divided into two categories: Assisted and Unasisted. So what are those questions like?
+The test results are divided into two categories: assisted and unassisted. So what are those questions like?
 <br> <br>
 Lets look at some examples in the given json:
-
-<br> <br>
 
 ```python
 
@@ -105,7 +104,7 @@ So how many of those issues can the state of the art models train?
 <br> <br>
 
 Looking at the current output, Claude 2 seems to be peaking at 4.8 %. This does not seem to be that threathening as one might assume, and I do not think that we should throw out software engineers for those kind of results.
-But there is one more thing. This is the "assisted" category. The tested system get provided the list of files that were modified for that particular Issue. While human engineers often need to look up which files are contributing to the issue and then resolve said problem, this is here not the case at all. So what are the "unassisted" numbers?
+But there is one more thing. This is the "assisted" category. The tested systems get provided the list of files that were modified for that particular Issue. While human engineers often need to look up which files are contributing to the issue and then resolve said problem, this is not the case here at all. So what are the "unassisted" numbers?
 
 <br> <br>
 ![Alt text](/assets/images/blog/assisted-models-swe.png)
@@ -114,9 +113,11 @@ But there is one more thing. This is the "assisted" category. The tested system 
 This looks pretty bleak for now. We see that most models currently cannot surpassed the one percent mark. So with Devin (which is trained on the same dataset), why did the numbers skyrocket?
 I cannot know for sure, but remember that they are plenty of factors and tactics to artificially mark up the percentages provided:
 
-1. We currently do not know on which data subset the data was trained on.
-2. The best yield achieved is probably the one shown.
-3. Other models presented do not have the mentioned environment (cli, reusability of code fragments etc.) available, which is probably why the results are so different.
+- We currently do not know on which data subset the data was trained on.
+
+- The best yield achieved is probably the one shown.
+
+- Other models presented do not have the mentioned environment (cli, reusability of code fragments etc.) available, which is probably why the results are so different.<br> <br>
 
 The goal here is not to have the most correct assessment of technical prowess, but to cater to VCs and sell the product - which is totally understandable.
 <br> <br>
@@ -124,7 +125,7 @@ The goal here is not to have the most correct assessment of technical prowess, b
 <br> <br>
 ![Alt text](/assets/images/blog/near-human-headline.png)
 <br> <br>
-Seems scary right? Did we make so much progress in one year. Was Claude not able to resolve algebra, but now we have truly build an AI?
+Seems scary right? Did we make so much progress in one year? Was Claude not able to resolve algebra, but now we have truly build an near perfect AI?
 <br> <br>
 ![Alt text](/assets/images/blog/benchmark-claude-3.png)
 <br> <br>
@@ -154,9 +155,9 @@ If you do not believe me, you can try it out yourself. The other examples in its
 
 ## So is it all just hype?
 
-No. But it should be regarded as a bubble. And like every bubble, it will burst at some point. LLMs are extremely valuable for future software engineers and technical staff as a tool to automate things and be more productive. It is not going to replace us in the near future when it comes to solving coding problems, and I do not think it will ever replace the term "software engineer" coneceptually.
+No. But it should be regarded as a bubble. And like every bubble, it will burst at some point. LLMs are extremely valuable for future software engineers and technical staff as a tool to automate things and be more productive. It is not going to replace us in the near future when it comes to solving coding problems though, and I do not think it will ever replace the term "software engineer" conceptually.
 <br> <br>
-What is important though is to get aquainted in those tools and look for possibilities on how to effeciently use "AI" to leverage your value as a professional. For non-technical people it is more important than ever to listen to technical professional on what to expect in the current changes, and how to adapt, without buying to much into the hype that is circulating Social Media. If you as a new programmer think that writing code is the main part of your job/should be the focus on what you do - be ready for big changes, extend your skills into other areas of software engineering.
+What is important though is to get aquainted in those tools and look for possibilities on how to efficiently use "AI" to leverage your value as a professional. For non-technical people it is more important than ever to listen to technical professional on what to expect in the current changes, and how to adapt, without buying to much into the hype that is circulating social media. If you as a new programmer think that writing code is the main part of your job or should be the focus on what you do - be ready for big changes and extend your skills into other areas of software engineering.
 
 <br> <br>
 **Nonetheless - be critical, adapt to a new upcoming environment and do not forget to be relaxed - Devin is not gonna take your job tomorrow. :D**
