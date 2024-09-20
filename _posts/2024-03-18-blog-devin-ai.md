@@ -37,7 +37,7 @@ of prompts. <br><br>
 
 There is some legitimate question about just how cherry-picked these examples are, but there is not anything about what it does that seems infeasible. But it is not a real AI software engineer, its more another tool for us. Well why is that? <br> <br>
 
-This is because employing software engineers (most of the times) means creating business value. The job of a software engineering team is generally to take those high-level business requirements from the non-programming business folks, turn those things into a product or service that can then be userd by customers.
+This is because employing software engineers (most of the times) means creating business value. The job of a software engineering team is generally to take those high-level business requirements from the non-programming business folks, turn those things into a product or service that can then be used by customers.
 
 <br> <br>
 

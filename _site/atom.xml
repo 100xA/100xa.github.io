@@ -4,13 +4,103 @@
  <title>Jan Biernacki Personal Portfolio</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-03-18T22:12:02+01:00</updated>
+ <updated>2024-09-19T19:03:43+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Statistical Computing in R with World Open Data Bank</title>
+   <link href="http://localhost:4000/2024/09/19/world-data-bank-statistical-computing-with-r/"/>
+   <updated>2024-09-19T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2024/09/19/world-data-bank-statistical-computing-with-r</id>
+   <content type="html">&lt;h1 id=&quot;world-bank-data-analysis-project-development-process&quot;&gt;World Bank Data Analysis Project: Development Process&lt;/h1&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;This project aims to analyze socioeconomic indicators from the World Bank database, focusing on the period from 2000 to 2019. The goal is to explore relationships between various indicators such as GDP per capita, fertility rate, life expectancy, education levels, labor force participation, and health expenditure across different countries.&lt;/p&gt;
+
+&lt;h2 id=&quot;development-process&quot;&gt;Development Process&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Initial Planning:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Identified key socioeconomic indicators of interest&lt;/li&gt;
+      &lt;li&gt;Decided on the time frame (2000-2019) to capture recent trends&lt;/li&gt;
+      &lt;li&gt;Chose R as the primary tool for data analysis and visualization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data Acquisition:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Utilized the &lt;code&gt;wbstats&lt;/code&gt; package to directly fetch data from the World Bank API&lt;/li&gt;
+      &lt;li&gt;Selected specific indicator codes for the chosen variables&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data Cleaning and Preprocessing:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Implemented filtering to remove countries with insufficient data&lt;/li&gt;
+      &lt;li&gt;Developed a threshold-based approach to ensure data quality&lt;/li&gt;
+      &lt;li&gt;Applied linear interpolation to handle missing values, balancing data completeness with accuracy&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Analysis and Visualization:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Created visualizations to compare data before and after interpolation&lt;/li&gt;
+      &lt;li&gt;Calculated correlations between different indicators to identify potential relationships&lt;/li&gt;
+      &lt;li&gt;Developed scatter plots to visually represent relationships between specific variables&lt;/li&gt;
+      &lt;li&gt;Excerpts can be found &lt;a href=&quot;world_bank_indicators_2000_2019.csv&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Code Organization and Documentation:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Structured the R script with clear sections for each step of the analysis&lt;/li&gt;
+      &lt;li&gt;Added comprehensive comments to explain the purpose and functionality of each code block&lt;/li&gt;
+      &lt;li&gt;Created a README file to provide an overview of the project and instructions for use&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Testing and Refinement:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Ran the script multiple times with different parameters to ensure robustness&lt;/li&gt;
+      &lt;li&gt;Adjusted the data cleaning process based on observed results&lt;/li&gt;
+      &lt;li&gt;Fine-tuned visualizations for clarity and informativeness&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Future Considerations:&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Identified potential areas for expansion, such as including more indicators or extending the time range&lt;/li&gt;
+      &lt;li&gt;Considered possibilities for more advanced statistical analyses in future iterations&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;challenges-and-solutions&quot;&gt;Challenges and Solutions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Data Availability:&lt;/strong&gt; Some countries had incomplete data for certain years. Solution: Implemented a filtering system and used interpolation to estimate missing values.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;API Limitations:&lt;/strong&gt; The World Bank API has request limits. Solution: Incorporated error handling and pauses between requests to manage this limitation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visualization Choices:&lt;/strong&gt; Deciding on the most effective ways to visualize multi-dimensional data. Solution: Experimented with various plot types and settled on a combination of time series and scatter plots.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The value of visualizing data at various stages of the analysis process&lt;/li&gt;
+  &lt;li&gt;The need for balancing data completeness with accuracy when dealing with missing values&lt;/li&gt;
+  &lt;li&gt;The benefits of modular code structure for ease of maintenance and future expansions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This project not only provided insights into global socioeconomic trends but also served as a valuable exercise in data acquisition, cleaning, analysis, and visualization using R.&lt;/p&gt;
+
+&lt;h1 id=&quot;links-and-further-information&quot;&gt;Links and further Information&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/100xA/DLBDSC01&quot;&gt;Link to the repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Devin and the AI economy</title>
@@ -48,7 +138,7 @@ of prompts. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;There is some legitimate question about just how cherry-picked these examples are, but there is not anything about what it does that seems infeasible. But it is not a real AI software engineer, its more another tool for us. Well why is that? &lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is because employing software engineers (most of the times) means creating business value. The job of a software engineering team is generally to take those high-level business requirements from the non-programming business folks, turn those things into a product or service that can then be userd by customers.&lt;/p&gt;
+&lt;p&gt;This is because employing software engineers (most of the times) means creating business value. The job of a software engineering team is generally to take those high-level business requirements from the non-programming business folks, turn those things into a product or service that can then be used by customers.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt; &lt;br /&gt;&lt;/p&gt;
 
@@ -140,7 +230,7 @@ I cannot know for sure, but remember that they are plenty of factors and tactics
 &lt;br /&gt; &lt;br /&gt;
 &lt;img src=&quot;/assets/images/blog/near-human-headline.png&quot; alt=&quot;Alt text&quot; /&gt;
 &lt;br /&gt; &lt;br /&gt;
-Seems scary right? Did we make so much progress in one year? Was Claude not able to resolve algebra, but now we have truly build an near perfect AI?
+Seems scary, right? Did we make so much progress in one year? Was Claude not able to resolve algebra, but now we have truly build a near perfect AI?
 &lt;br /&gt; &lt;br /&gt;
 &lt;img src=&quot;/assets/images/blog/benchmark-claude-3.png&quot; alt=&quot;Alt text&quot; /&gt;
 &lt;br /&gt; &lt;br /&gt;
