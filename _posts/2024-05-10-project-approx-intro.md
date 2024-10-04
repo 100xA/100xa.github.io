@@ -49,11 +49,11 @@ Imagine having a really smart research assistant who:
 - Suggests relevant connections to your existing notes
 - Maintains your tagging system
 
-That's essentially what this agent will do, but automatically. By that we have built 
+That's essentially what this agent will do, but automatically.
 
 ## Real-World Example
 
-Here's what happened when I fed it a research paper about cognitive biases:
+Here is what will happen.
 
 Before:
 ```
