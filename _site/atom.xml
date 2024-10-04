@@ -4,7 +4,7 @@
  <title>Jan Biernacki Personal Portfolio</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-09-27T14:53:34+02:00</updated>
+ <updated>2024-10-05T00:56:25+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,21 +13,95 @@
 
  
  <entry>
-   <title>Statistical Computing in R with World Open Data Bank</title>
-   <link href="http://localhost:4000/2024/09/19/world-data-bank-statistical-computing-with-r/"/>
-   <updated>2024-09-19T00:00:00+02:00</updated>
-   <id>http://localhost:4000/2024/09/19/world-data-bank-statistical-computing-with-r</id>
-   <content type="html">&lt;h1 id=&quot;world-bank-data-analysis-project-development-process&quot;&gt;World Bank Data Analysis Project: Development Process&lt;/h1&gt;
+   <title>Introduction Project &quot;Approx&quot;</title>
+   <link href="http://localhost:4000/2024/10/05/project-approx/"/>
+   <updated>2024-10-05T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2024/10/05/project-approx</id>
+   <content type="html">&lt;h1 id=&quot;building-an-ai-powered-pdf-to-obsidian-assistant&quot;&gt;Building an AI-Powered PDF to Obsidian Assistant&lt;/h1&gt;
 
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;This project analyzed World Bank socioeconomic indicators from 2000 to 2019, exploring relationships
-between factors like GDP per capita, fertility rates, and education levels across countries.
-The analysis involved data preprocessing, including filtering out countries with insufficient data and using linear interpolation for missing values. Visualizations were created to compare pre- and post-interpolation data, correlations between indicators were calculated, and scatter plots were developed to illustrate relationships.
-The R script was structured with clear sections and comprehensive comments, accompanied by a
-README file for project overview and usage instructions. The development process included continuous testing and refinement, with adjustments to data cleaning methods and visualization techniques.
-Challenges encountered included dealing with incomplete data, managing API limitations,
-and selecting effective visualization methods. These were addressed through careful filtering, error handling, and experimentation with different plot types.
-Future opportunities include expanding the analysis by incorporating additional indicators or extending the time range, with potential for more advanced statistical analyses in subsequent iterations.&lt;/p&gt;
+&lt;h2 id=&quot;the-aha-moment&quot;&gt;The “Aha” Moment&lt;/h2&gt;
+
+&lt;p&gt;Last week, I found myself drowning in PDFs. Again. :(&lt;/p&gt;
+
+&lt;p&gt;Between research papers, documentation, and various digital books, I had accumulated a small library of PDFs that needed to be integrated into my Obsidian vault. As I manually copied, pasted, and formatted the twentieth document of the day, I had that classic developer thought: “There has to be a better way.”&lt;/p&gt;
+
+&lt;p&gt;There is none, so I need to build one.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-obsidian&quot;&gt;What is Obsidian?&lt;/h2&gt;
+
+&lt;p&gt;Obsidian is a powerful knowledge management tool that allows users to create a personal knowledge base using markdown files. It enables users to link notes together, creating a network of interconnected ideas, which enhances the way information is organized and retrieved. This project aims to leverage Obsidian’s capabilities by automating the integration of PDF content into the vault, ensuring that the structure and connections within the knowledge base are preserved and enriched.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;If you’re like me, your Obsidian vault is more than just a collection of notes—it’s a carefully curated digital garden. Each note has its place, its connections, its tags, and its role in the greater knowledge graph. Simply dumping PDF content into it would be like throwing random plants into a well-maintained garden. The structure matters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Here are my requirements:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Preserve my existing vault structure&lt;/li&gt;
+  &lt;li&gt;Maintain the integrity of my knowledge graph&lt;/li&gt;
+  &lt;li&gt;Generate meaningful connections to existing notes&lt;/li&gt;
+  &lt;li&gt;Keep my tagging system consistent&lt;/li&gt;
+  &lt;li&gt;Save me time (obviously!)&lt;/li&gt;
+  &lt;li&gt;Seemlessly integrate into Obsidian (no copy pasting action)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;the-solution-meet-the-obsidian-pdf-agent&quot;&gt;The Solution: Meet the Obsidian PDF Agent&lt;/h2&gt;
+
+&lt;p&gt;A rough overview (for now)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/mermaid-diagram.png&quot; alt=&quot;Mermaid Diagramm for Approx&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;how-it-works&quot;&gt;How It Works&lt;/h3&gt;
+
+&lt;p&gt;Imagine having a really smart research assistant who:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reads and understands your PDFs&lt;/li&gt;
+  &lt;li&gt;Knows how you organize your notes&lt;/li&gt;
+  &lt;li&gt;Creates perfectly formatted markdown files&lt;/li&gt;
+  &lt;li&gt;Places them in the right folders&lt;/li&gt;
+  &lt;li&gt;Suggests relevant connections to your existing notes&lt;/li&gt;
+  &lt;li&gt;Maintains your tagging system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s essentially what this agent will do, but automatically. By that we have built&lt;/p&gt;
+
+&lt;h2 id=&quot;real-world-example&quot;&gt;Real-World Example&lt;/h2&gt;
+
+&lt;p&gt;Here’s what happened when I fed it a research paper about cognitive biases:&lt;/p&gt;
+
+&lt;p&gt;Before:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;research_paper_123.pdf
+└── 50 pages of dense academic text / uni scripts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;---
+title: &quot;Understanding Cognitive Biases in Decision Making&quot;
+source: &quot;Journal of Behavioral Economics, 2024&quot;
+tags: [psychology, decision-making, cognitive-bias]
+related: [[Decision Making Framework]], [[Behavioral Economics]]
+---
+
+## Key Findings
+- Discovery of three new cognitive biases
+- Impact on financial decision making
+- Potential mitigation strategies
+
+[... rest of the intelligently formatted content ...]
+
+![Specifically Integrated Link to another node]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;final-notes&quot;&gt;Final Notes&lt;/h2&gt;
+
+&lt;p&gt;I will be back soon with updates. I am mostly new to this field, so mistakes (learning opportunities) will happen. I will be posting weekly on my progress. Thank you for reading &amp;lt;3.&lt;/p&gt;
+
+&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/100xA/approx&quot;&gt;Approx Repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
