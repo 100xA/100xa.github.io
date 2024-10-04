@@ -18,7 +18,7 @@ There is none, so I need to build one.
 
 ## What is Obsidian? 
 
-Obsidian is a powerful knowledge management tool that allows users to create a personal knowledge base using markdown files. It enables users to link notes together, creating a network of interconnected ideas, which enhances the way information is organized and retrieved. This project aims to leverage Obsidian's capabilities by automating the integration of PDF content into the vault, ensuring that the structure and connections within the knowledge base are preserved and enriched.
+[Obsidian](https://obsidian.md/) is a powerful knowledge management tool that allows users to create a personal knowledge base using markdown files. It enables users to link notes together, creating a network of interconnected ideas, which enhances the way information is organized and retrieved. This project aims to leverage Obsidian's capabilities by automating the integration of PDF content into the vault, ensuring that the structure and connections within the knowledge base are preserved and enriched.
 
 ## The Problem
 
